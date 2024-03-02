@@ -328,9 +328,10 @@ app.post('/deleteFolder', (req, res) => {
       filesFoldersPush(filepath, context)
       console.log(context);
       console.log(req.body.id);
+      res.redirect('/');
     })
   }
-  res.redirect('/');
+
 })
 app.post('/deleteFile', (req, res) => {
   console.log(req.body.id);
